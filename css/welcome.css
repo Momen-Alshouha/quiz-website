@@ -1,0 +1,278 @@
+body{
+  overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+  .container-fluid {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #FFF;
+  }
+
+  /* ============= Animation background ========= */
+  .background {
+    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    height: 100vh;
+    width: 100vw;
+
+  }
+
+  .cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 7px;
+    height: 7px;
+    border: solid 1px #D7D4E4;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+  }
+
+  .cube:nth-child(2n) {
+    border-color: #FFF ;
+  }
+
+  .cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+  
+  .cube:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+
+  .cube:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+
+  .cube:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+  .cube:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+  .cube:nth-child(7) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 40vh;
+  }
+  .cube:nth-child(8) {
+    animation-delay: 10s;
+    left: 70vw;
+    top: 2vh;
+  }
+  
+  /* ================= Header ============ */
+
+  header {
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* navbar*/
+  nav {
+    color: #FFF;
+    float: right;
+    margin:50px 90px;
+  }
+
+  nav ul {
+    list-style: none;
+  }
+
+  nav ul li {
+    float: left;
+    transition: .3s;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #EFEEF5;
+   font-weight: bold;
+    font-size: 24px;
+    margin-left:50px;
+  }
+
+  nav ul li:hover a{
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 3px;
+    color: #591BC5;
+    background-color: #efeef573;
+  }
+
+  /* Logo */
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 180px;
+    height: 50px;
+    /* background: #EFEEF5; */
+    margin: 40px 63px;
+    float: left;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+
+  .logo span a{
+    text-decoration: none;
+    color: white;
+    /* color: #591BC5; */
+    font-size: 2em;
+    line-height: 1;
+    padding-left: 5px;
+    font-weight: bold;
+  }
+
+
+  .content{
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto auto;
+    gap: 10px 10px ;
+    justify-content: center;
+  
+  }
+  .WelcomMsg{
+    grid-area: 1/1/3/4;
+    display: grid;
+    place-items: center;
+   margin-bottom:20px;
+    font-size: 2em;
+    color: white;
+   }
+ 
+  .card{
+    place-items: center;
+      width: 22rem;
+      border-radius: 30%;
+      box-shadow: 0 5px 20px rgb(100, 97, 97);
+      padding: 30px;
+      margin: 25px;
+      background-color:#ffffffdb !important;
+      border:#0000003f 1px solid ;
+      
+  }
+  .info h2{
+    text-align: center;
+    color:#4c1ca5;
+  }
+
+  .textcard{
+    color:#4c1ca5;
+    
+  }
+
+  section{
+margin-top: 17vh;
+  }
+
+  .icon{
+  font-size: 4em;
+  color:#4c1ca5;
+  }
+
+  .card:hover
+ {
+     transform: scale(1.1);
+ }
+ .btn{
+ margin: 10px;
+  font-size: medium;
+  border-radius: 5px;
+  background-color: #db7093e8 !important;
+  width: 180px;
+  text-align: center;
+ }
+
+ .btn a{
+  color:#ffffff;
+  font-size: 1.2em;
+  font-weight: 500;
+ }
+
+
+  
+  @media screen and (max-width:479px) {
+    .background {
+
+      height: 280vh;
+    }
+
+    .content{
+  
+      grid-template-columns: auto;
+     
+  
+    }
+
+    .WelcomMsg{
+     grid-row:1/3 ;
+     justify-content: center;
+          font-size: 1.2em;
+         }
+  }
+
+  @media screen  and (min-width: 480px) and (max-width: 768px)
+  {
+
+    .content{
+      grid-template-columns: auto;
+    }
+    .background {
+
+      height: 250vh;
+    }
+
+    .WelcomMsg{
+     grid-area: 1/1/3/2;
+     justify-content: center;
+          font-size: 1.1em;
+     }
+
+    }
+
+     @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+         .content{
+          gap: 5px 5px ;
+         }
+        .card{
+            width: 16rem;}
+
+            .WelcomMsg p{
+              grid-area: 1/1/3/2;
+              justify-content: center;
+                   
+              }
+
+}

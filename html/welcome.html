@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Quizony - Signin</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&family=Lobster&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&family=Yanone+Kaffeesatz:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/register.css">
+  <link rel="stylesheet" href="../css/signin.css">
+  <link rel="stylesheet" href="../css/welcome.css">
+
+  <link rel="icon" href="../images/icon.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/693619f7ae.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- Background & animion & navbar & title -->
+
+  <!-- Background animtion-->
+  <div class="background">
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+  </div>
+  <!-- header -->
+  <header>
+    <!-- navbar -->
+    <nav>
+      <ul>
+        <li>
+          <div class="logout">
+            <a class="lgout" style="color: #857e86;" href="index.html"><i class="fa fa-power-off" ></i></a>
+          </div>
+    
+      </li>
+      </ul>
+    </nav>
+
+
+    <!-- logo -->
+    <div class="logo"><span><a href="index.html">Quizony</a></span></div>
+
+    
+    <section >
+
+      <div class="WelcomMsg"><p>WELCOME,</p><h1 style="text-transform: uppercase;font-style: italic; color: rgb(220, 238, 238);" id="welcome">Full name</h1></div>
+      <button style="margin-left: 670px;" class="btn"> <a href="IQ_exam.html" style="text-decoration: none;">Start The Quiz</a></button>
+
+      <div id="skl" class="content">
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <div class="info">
+            <h2> IQ QUIZ</h2>
+            <h6 class="textcard">
+              This quiz will test your basics of IQ and will contain questions about the logic,and the way you think.Each question will have one point you either get the point or not,
+              the estimated time for this exam is ten minutes.
+              Wish you the best of luck! </h6>
+
+          </div>
+
+        </div>
+
+
+        <div id="skl" class="content">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-book-atlas"></i>
+            </div>
+            <div class="info">
+              <h2> ENGLISH QUIZ</h2>
+              <h6 class="textcard">
+                This quiz will test your basics of English and will contain questions about Grammar, general information
+                and more. Each question will have one point you either get the point or not,
+                the estimated time for this exam is ten minutes.
+                Wish you the best of luck! </h6>
+
+            </div>
+          </div>
+
+          <div id="skl" class="content">
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="info">
+                <h2> TECHNICAL QUIZ</h2>
+                <h6 class="textcard">
+
+                  This quiz will test your basics of programming and will contain questions about tags, general info. Each question will have one point you either get the point or not, the estimated
+                  time for this exam is ten minutes.
+                  Wish you the best of luck! </h6>
+
+              </div>
+              
+
+            </div>
+          </div>
+    </section>
+  </header>
+
+
+  <script>
+    let fullname=localStorage.getItem("name");
+    document.getElementById("welcome").innerHTML=`${fullname} To The Exam Page!`;
+
+    
+
+  </script>
+</body>
+
+
+</html>
+
+
+
+

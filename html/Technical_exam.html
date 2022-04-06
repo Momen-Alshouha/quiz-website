@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/Questionsystyle.css" />
+    <title>Quizony</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><span><a href="index.html">Quizony</a></span></div>
+
+      <div class="logout">
+      <a class="lgout" style="color: #857e86;" href="index.html"><i class="fa fa-power-off" ></i></a> 
+      <div class="form-group">
+    </div>
+      </div>
+      
+    </nav>
+
+    <div style="position: relative;" class="quizContainer" id="quiz">
+      <div class="quizHeader">
+        <h2 id="question">Question text</h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">question</label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="b" class="answer">
+            <label for="b" id="b_text">question</label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="c" class="answer">
+            <label for="c" id="c_text">question</label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="d" class="answer">
+            <label for="d" id="d_text">question</label>
+          </li>
+         
+        </ul>
+      </div>
+      <button id="next">Next <i class="fa fa-angle-double-right"></i></button>
+    </div>
+    <script src="../JS/Technicalscript.js"></script>
+  </body>
+</html>

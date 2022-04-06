@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+nav{display: flex;flex-direction: row;}
+
+
+
+
+
+.logout{
+  font-size:33px;
+  padding: 11px;
+  width: 120px;
+  height: 50px;
+  margin-left: 152vh ;
+  margin-top: 30px;
+  letter-spacing: 2px;
+
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+/* display: flex;
+  align-items: center;
+  justify-content: center;*/
+body {
+  background: linear-gradient(132deg, #d24f60, #591BC5, #212335);
+ background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  font-size:small ;
+  height: 100vh;
+  margin: 0;
+}
+
+.quizContainer {
+ 
+  background-color:#f0f8ffc2 !important;
+  border-radius: 4px;
+  width: 50%; 
+  overflow: hidden;
+  margin:50px auto;
+
+
+}
+
+.quizHeader {
+  padding: 4rem;
+}
+
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+  color:rgb(35 34 60) ;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+ul li label {
+  cursor: pointer;
+ color:rgb(35 34 60);
+}
+
+button {
+  background-color:rgb(35 34 60) ;
+  color: #fff;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1.3rem;
+}
+
+button:hover {
+  background-color:#6e6a7170;  
+}
+@media only screen and (max-device-width: 600px) {
+  #quiz {
+    width: 380px;
+  }
+  
+  #question {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  label {
+    font-size: 15px;
+  }
+
+
+}
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container-fluid {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #FFF;
+}
+
+/* ============= Animation background ========= */
+.background {
+  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+
+header {
+  position: absolute;
+  top:0%;
+  left: 0%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar*/
+nav {
+  color: #FFF;
+  float: right;
+ 
+}
+
+
+
+
+
+/* Logo */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 180px;
+  height: 50px;
+  /* background: #EFEEF5; */
+  margin: 40px 63px;
+  float: left;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.logo span a {
+  text-decoration: none;
+  color: white;
+  /* color: #591BC5; */
+  font-size: 2em;
+  line-height: 1;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+
+
+@media only screen and (max-device-width: 992px) {
+  img {
+    height: 350px;
+    width: 350px;
+    margin-left: 150px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .logo {
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+  }
+  .header-content h1{
+    font-size: 2em;
+  }
+
+  .header-content p {
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (max-device-width: 800px) {
+  img {
+    height: 300px;
+    width: 300px;
+  }
+  
+
+  .logo {
+    font-size: 18px;
+    left: -35px;
+  }
+
+}
+
+  @media only screen and (max-device-width: 766px) {
+    img {
+      display: none;
+    }
+
+    nav {
+      margin: 20px;
+      font-size: 7vw;
+    }
+    .header-content h1{
+      font-size: 3em;
+      text-align: right;
+      margin-left: -65px;
+    }
+  
+    .header-content p {
+      font-size: 25px;
+      margin: 25px;
+    }
+
+    .logo {
+      font-size: 15px;
+      left: -35px;
+    }
+
+  }
+
+  @media only screen and (max-device-width: 425px) {
+    
+    .logout {
+      position: relative;
+      margin-top: -25px;
+      margin-bottom: 50px;
+    }
+    .logo {
+      position: absolute;;
+      top: 10px;
+    }
+    nav {
+        margin-top: 80px;
+    }}
+
