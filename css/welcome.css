@@ -22,7 +22,7 @@ body{
     background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
 
   }
@@ -206,17 +206,16 @@ margin-top: 17vh;
      transform: scale(1.1);
  }
  .btn{
- margin: 10px;
-  font-size: medium;
+  margin: 10px;
   border-radius: 5px;
   background-color: #db7093e8 !important;
-  width: 180px;
+  width: 220px;
   text-align: center;
  }
 
  .btn a{
   color:#ffffff;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 500;
  }
 

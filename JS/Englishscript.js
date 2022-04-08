@@ -123,8 +123,7 @@ submitBtn.addEventListener('click', () => {
            
             quiz.innerHTML = `
             <h1  style="color: DarkBlue ;text-align:center">You Completed The English Exam </h1>
-               <h2 style="color: DarkBlue"> Your Score Is ${scoreEN} Out Of 5 </h2>
-            <a style="text-decoration:none;color:white" href="../html/EnglishResult.html"><button  margin-top:0px" >Show Answers</button></a>
+           
             <br> <br>
             <button  margin-top:0px" ><a style="text-decoration:none;color:white" href="../html/Technical_exam.html">Go to Technical Exam</a></button>
             
@@ -136,8 +135,6 @@ submitBtn.addEventListener('click', () => {
                
                quiz.innerHTML = `
                <h1  style="color: DarkBlue ;text-align:center">You Completed The English Exam </h1>
-               <h2 style="color: DarkBlue"> Your Score Is ${scoreEN} Out Of 5 </h2>
-               <a style="text-decoration:none;color:white" href="../html/EnglishResult.html"><button  margin-top:0px" >Show Answers</button></a>
                <br> <br>
                <button  margin-top:0px" ><a style="text-decoration:none;color:white" href="../html/Technical_exam.html">Go to Technical Exam</a></button>
             `

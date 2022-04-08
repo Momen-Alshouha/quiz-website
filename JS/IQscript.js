@@ -131,8 +131,8 @@ submitBtn.addEventListener('click', () => {
             // quiz.style.color='#212335';
             quiz.innerHTML = `
             <h1  style="color: DarkBlue ;text-align:center">You Completed The IQ Exam </h1>
-            <h2 style="color: DarkBlue"> Your Score Is ${scoreIQ} Out Of 5 </h2>
-            <a style="text-decoration:none;color:white" href="../html/IQresultt.html"><button  margin-top:0px" >Show answers</button></a>
+
+           
             <br> <br>
             <button><a style="text-decoration:none;color:white" href="../html/English_exam.html">Go to English Exam</a></button>
             
@@ -145,8 +145,7 @@ submitBtn.addEventListener('click', () => {
                quiz.style.backgroundColor='white';
                quiz.innerHTML = `
                <h1  style="color: DarkBlue ;text-align:center">You Completed The IQ Exam </h1>
-               <h2 style="color: DarkBlue"> Your Score Is ${scoreIQ} Out Of 5 </h2>
-               <a style="text-decoration:none;color:white" href="../html/IQresultt.html"><button  margin-top:0px" >Show Answers</button></a>
+              
                <br> <br>
                <button><a style="text-decoration:none;color:white" href="../html/English_exam.html">Go to English Exam</a></button>
             `

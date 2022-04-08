@@ -161,39 +161,46 @@ submitBtn.addEventListener('click', () => {
              finalGrade=parseInt( localStorage.getItem("scoreTECH"))+parseInt( localStorage.getItem("scoreIQ"))+parseInt( localStorage.getItem("scoreEN"));
 if (finalGrade<10)
 {
-     x= "...Unfortunately, You Did Not Fulfill Our Requirements, Good Luck! "
+     x= "... Unfortunately, You Did Not Fulfill Our Requirements, Good Luck! "
 }
 else
  { 
-     x="...Congratulation, We Will Arrange With You The Second Interview!"
+     x="... Congratulation, We Will Arrange With You The Second Interview!"
 }
             if(finalGrade>9)
            { 
                
             quiz.innerHTML = `
 
-            <h2>you completed technical exam</h2>
-            <h2> Your Score Is ${scoreTECH} Out Of 10 </h2>
+            <h2 style:"margin:10px">You completed All Exams</h2>
+            <a style="text-decoration:none;color:white" href="../html/TechResult.html"><button  margin-top:0px" >Review Your Technical Answers</button></a>
+            <br> <br>
 
-            <a style="text-decoration:none;color:white" href="../html/IQresultt.html"><button  margin-top:0px" >Show  answers</button></a>
+            <a style="text-decoration:none;color:white" href="../html/EnglishResult.html"><button  margin-top:0px" >Review Your English Answers</button></a>
+            <br> <br>
+
+            <a style="text-decoration:none;color:white" href="../html/IQresultt.html"><button  margin-top:0px" >Review Your IQ Answers</button></a>
             <br> <br>
 
 
             <h2 style="text-align:center ;color: #288f28 ;border-radius: 25px;margin-top:30px; padding:30px height:100px ;width:"320px">Your final Score is ${finalGrade+x} <br> </h2>
 
             
-        `
-        //<h1  style="color: DarkBlue ;text-align:center">You Completed The IQ Exam </h1>
-        //<h2 style="color: DarkBlue"> Your Score Is ${scoreIQ} Out Of 5 </h2>
-        // <button><a style="text-decoration:none;color:white" href="../html/welcome.html">Go to exams page</a></button><br><br>
+        `   
         
         }
            else{     quiz.innerHTML = ` 
-           <h3  style="color: DarkBlue ;text-align:center;margin-top:15px">You Completed  The Technical Exam</h3>
-           <h4  style="color: DarkBlue ;text-align:center; margin:30px"> Your Score Is ${scoreTECH} Out Of 10 </h4>
-           
-           <a style="text-decoration:none;color:white" href="../html/TechResult.html"><button  margin-top:0px" >Show answers</button></a>
-           <br> <br>
+           <h2 style:"margin:10px">You completed All Exams</h2>
+            <a style="text-decoration:none;color:white" href="../html/TechResult.html"><button  margin-top:0px" >Review Your Technical Answers</button></a>
+            <br> <br>
+
+            <a style="text-decoration:none;color:white" href="../html/EnglishResult.html"><button  margin-top:0px" >Review Your English Answers</button></a>
+            <br> <br>
+
+            <a style="text-decoration:none;color:white" href="../html/IQresultt.html"><button  margin-top:0px" >Review Your IQ Answers</button></a>
+            <br> <br>
+
+         
 
            <h2 style="text-align:center ;color: #b22222 ;border-radius: 25px;margin-top:30px; padding:30px height:100px ;width:"320px">Your Final Score is ${finalGrade+x} <br> </h2>
 

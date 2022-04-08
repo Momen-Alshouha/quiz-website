@@ -1,10 +1,10 @@
 let nameElement = document.getElementById("fullname");
 let passElement =document.getElementById("password");
-let passVerfyElement=document.getElementById("verfypassword");
 let registerButton =document.getElementById("registerBtn");
 let spanInput = document.getElementById("nameSpan");
 let passInput = document.getElementById("passSpan");
 let verfySpan = document.getElementById("verfySpan");
+let verfyPass=document.getElementById("verfyPassword")
 let emailElement = document.getElementById("email");
 let spanEmail = document.getElementById("spanEmail");
 
@@ -17,6 +17,14 @@ let passPattern = /^(?=.*?^[A-Z])(?=(.*[a-z]))(?=(.*[\d]){2,})(?!.*\s).{8,}$/ ; 
 // A12abc
 registerButton.onclick = function() {
         
+    if(passElement.value!==verfyPass.value){
+        verfySpan.innerHTML = "Confirmation password error!";
+        verfySpan.style.color = 'red';
+    }
+    else {
+        verfySpan.innerHTML = "";
+    }
+
     if (!(nameElement.value.match(namePattern))) {
         spanInput.innerHTML="Full name must contain letters only!";
         }
@@ -52,7 +60,7 @@ registerButton.onclick = function() {
 
         spanEmail.style.color = "red";
         
-        if ((nameElement.value.match(namePattern))&&(emailElement.value.match(emailPattern)&&(passElement.value.match(passPattern)))) {
+        if ((nameElement.value.match(namePattern))&&(emailElement.value.match(emailPattern)&&(passElement.value.match(passPattern)) && passElement.value===verfyPass.value)) {
             alert("You have registered successfully");
        
             window.open("../html/login.html","_self")      

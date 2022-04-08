@@ -3,6 +3,14 @@
     --true-color:green;
     --section-padding:40px;
   }
+
+  h1 {
+    text-align: center;
+    background-color: #f0f8ffd6;
+    margin-left: 110px;
+    margin-right: 110px;
+    padding: 20px;
+  }
 body{
   overflow-x: hidden;
 }
@@ -26,7 +34,7 @@ body{
 
 
   .background {
-    height: 320vh;
+    height: 340vh;
   }
 
 
