@@ -18,7 +18,7 @@ buttonElement.onclick = function () {
             alert('Email or password incorrect');
         }
        
-          else{  window.open("../html/welcome.html");
+          else{  window.open("../html/welcome.html","_self");
         }  
         
     }
