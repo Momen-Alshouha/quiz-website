@@ -159,16 +159,10 @@ submitBtn.addEventListener('click', () => {
 
             localStorage.setItem("scoreTECH", scoreTECH);
              finalGrade=parseInt( localStorage.getItem("scoreTECH"))+parseInt( localStorage.getItem("scoreIQ"))+parseInt( localStorage.getItem("scoreEN"));
-if (finalGrade<10)
-{
-     x= "... Unfortunately, You Did Not Fulfill Our Requirements, Good Luck! "
-}
-else
- { 
-     x="... Congratulation, We Will Arrange With You The Second Interview!"
-}
+            
+
             if(finalGrade>9)
-           { 
+             { 
                
             quiz.innerHTML = `
 
@@ -181,15 +175,21 @@ else
 
             <a style="text-decoration:none;color:white" href="../html/IQresultt.html"><button  margin-top:0px" >Review Your IQ Answers</button></a>
             <br> <br>
-
-
-            <h2 style="text-align:center ;color: #288f28 ;border-radius: 25px;margin-top:30px; padding:30px height:100px ;width:"320px">Your final Score is ${finalGrade+x} <br> </h2>
-
             
         `   
-        
+        Swal.fire({
+            icon:'success',
+            title: 'Passed!',
+            text: '... Congratulation, We Will Arrange With You The Second Interview!',
+            imageUrl: 'https://thumbs.dreamstime.com/b/passed-195954049.jpg',
+            imageWidth: 400,
+            imageHeight: 200,
+            showCancelButton: true,
+            cancelButtonColor: '#90ee90',
+            showConfirmButton: false,
+          })
         }
-           else{     quiz.innerHTML = ` 
+           else {     quiz.innerHTML = ` 
            <h2 style:"margin:10px">You completed All Exams</h2>
             <a style="text-decoration:none;color:white" href="../html/TechResult.html"><button  margin-top:0px" >Review Your Technical Answers</button></a>
             <br> <br>
@@ -200,12 +200,20 @@ else
             <a style="text-decoration:none;color:white" href="../html/IQresultt.html"><button  margin-top:0px" >Review Your IQ Answers</button></a>
             <br> <br>
 
-         
-
-           <h2 style="text-align:center ;color: #b22222 ;border-radius: 25px;margin-top:30px; padding:30px height:100px ;width:"320px">Your Final Score is ${finalGrade+x} <br> </h2>
-
-           
-           `  }
+           `  
+           Swal.fire({
+            icon:'error',
+            title: 'Fail!',
+            text: '... Unfortunately, You Did Not Fulfill Our Requirements, Good Luck!',
+            imageUrl: 'https://cdn.pixabay.com/photo/2016/10/04/13/52/fail-1714367_1280.jpg',
+            imageWidth: 400,
+            imageHeight: 300,
+            showCancelButton: true,
+            cancelButtonColor: '#d33',
+            showConfirmButton: false,
+          })
+        
+        }
               
            
         }

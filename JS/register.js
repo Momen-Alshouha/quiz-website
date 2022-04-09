@@ -15,8 +15,9 @@ let namePattern = /[a-zA-Z]/g;
 let passPattern = /^(?=.*?^[A-Z])(?=(.*[a-z]))(?=(.*[\d]){2,})(?!.*\s).{8,}$/ ; // At least 8 digits, must contain two numbers, start with capital letter!.
 
 // A12abc
-registerButton.onclick = function() {
-        
+registerButton.onclick = function(event) {
+    
+    
     if(passElement.value!==verfyPass.value){
         verfySpan.innerHTML = "Confirmation password error!";
         verfySpan.style.color = 'red';
@@ -61,11 +62,17 @@ registerButton.onclick = function() {
         spanEmail.style.color = "red";
         
         if ((nameElement.value.match(namePattern))&&(emailElement.value.match(emailPattern)&&(passElement.value.match(passPattern)) && passElement.value===verfyPass.value)) {
-            alert("You have registered successfully");
-       
-            window.open("../html/login.html","_self")      
+            event.preventDefault();
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Your Registered Succesfully!\n ',
+                showConfirmButton: false,
+                footer: 'Click<a href="../html/login.html">&nbsp; HERE &nbsp;</a> To Go To Login Page!'
+              }) 
           }
 }
+
 
 
 
