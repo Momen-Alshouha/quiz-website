@@ -3,7 +3,11 @@
 
 
  ### Project context
-You are working in a company as a web developer. your manager wants you to create a quiz website, so when someone applies to a position, this quiz will test the candidate knowledge and skills. The Quiz contains three parts: 1- IQ Test 25% 2- English Test 25% 3-Technical Test 50%
+You are working in a company as a web developer. your manager wants you to create a quiz website, so when someone applies to a position, this quiz will test the candidate knowledge and skills. 
+The Quiz contains three parts: 
+1- IQ Test.
+2- English Test.
+3- Technical Test.
 
 You received the website requirement as follow:
 1. A home page that contains welcome message for the candidate.
