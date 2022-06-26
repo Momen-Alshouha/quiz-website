@@ -1,21 +1,20 @@
 
-var aa = [];
 var arrSymbols = [];
 
 
 
 const quizData = [
     {
-        question: "Q1: Find the answer that best completes the analogy?..'Book is to Reading as Fork is to:'",
+        question: "Q1: Find the answer that best completes the analogy! Book is to Reading as Fork is to ---- ? ",
 
-        a: "drawing",
-        b: "writing",
-        c: "stirring",
-        d: "Eating",
+        a: "Drawing",
+        b: "Writing",
+        c: "Driving",
+        d: "Eeating",
         correct: "d",
     },
     {
-        question: "Q2:Which of the following can be arranged into a 5-letter English word?",
+        question: "Q2: Which of the following can be arranged into a 5-letter English word ?",
         a: "H R G S T",
         b: "R I L S A",
         c: "T O O M T",
@@ -23,7 +22,7 @@ const quizData = [
         correct: "b",
     },
     {
-        question: "Q3:Which number should come next in the pattern?..'37, 34, 31, 28'",
+        question: "Q3: Which number should come next in the pattern?..'37, 34, 31, 28'",
         a: "25",
         b: "24",
         c: "30",
@@ -31,7 +30,7 @@ const quizData = [
         correct: "a",
     },
     { 
-        question: "Q4:Which number logically follows this series?...'4, 6, 9, 6, 14, 6'",
+        question: "Q4: Which number logically follows this series?...'4, 6, 9, 6, 14, 6'",
         a: "6",
         b: "17",
         c: "19",
@@ -39,11 +38,11 @@ const quizData = [
         correct: "c",
     },
     {
-        question: "Q5:Which of the meanings is the best fitting for the specified word?...'injustice'",
+        question: "Q5: Which of the meanings is the best fitting for the specified word?...'injustice'",
         a: "complaint",
         b: "futile",
         c: "sin",
-        d: "discord ",
+        d: "discord",
         correct: "a",
     }
 ];
@@ -77,18 +76,12 @@ function loadQuiz() {
 function deselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false)
 }
-//var arr2=[];
 function getSelected() {
     let answer
 
     answerEls.forEach(answerEl => {
         if (answerEl.checked) {
             answer = answerEl.id
-            //arr2.push(answer)
-
-
-
-            //here
         }
     })
 
@@ -96,7 +89,7 @@ function getSelected() {
 }
 
 submitBtn.addEventListener('click', () => {
-    console.log(aa)
+
     const answer = getSelected()
 
     if (answer) {
@@ -107,8 +100,7 @@ submitBtn.addEventListener('click', () => {
 
         }
         else {
-            //aa.push(CounterQuestions);
-            localStorage.setItem('arr', aa)
+            
             if (getSelected())
                 arrSymbols.push(answer)
             console.log(arrSymbols)
@@ -128,18 +120,13 @@ submitBtn.addEventListener('click', () => {
             if(scoreIQ>2)
            { 
                
-            // quiz.style.color='#212335';
             quiz.innerHTML = `
             <h1  style="color: DarkBlue ;text-align:center">You Completed The IQ Exam </h1>
 
            
             <br> <br>
             <button><a style="text-decoration:none;color:white" href="../html/English_exam.html">Go to English Exam</a></button>
-            
         `
-        
-        
-
         }
            else{
                quiz.style.backgroundColor='white';

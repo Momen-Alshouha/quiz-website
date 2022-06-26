@@ -1,4 +1,3 @@
-var aa = [];
 var arrSymbols = [];
 var finalGrade;
 var x;
@@ -141,8 +140,6 @@ submitBtn.addEventListener('click', () => {
 
         }
         else {
-            //aa.push(CounterQuestions);
-            localStorage.setItem('arr', aa)
             if (getSelected())
                 arrSymbols.push(answer)
             console.log(arrSymbols)

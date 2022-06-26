@@ -14,7 +14,7 @@ let namePattern = /[a-zA-Z]/g;
 
 let passPattern = /^(?=.*?^[A-Z])(?=(.*[a-z]))(?=(.*[\d]){2,})(?!.*\s).{8,}$/ ; // At least 8 digits, must contain two numbers, start with capital letter!.
 
-// A12abc
+
 registerButton.onclick = function(event) {
     
     
